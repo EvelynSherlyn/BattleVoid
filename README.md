@@ -6,7 +6,7 @@
 
 ## What is BattleVoid?
 ```bash
-BattleVoid is an alternate universe where suddenly, something white and abnormal appears on the eart.
+BattleVoid is an alternate universe where suddenly, something white and abnormal appears on the earth.
 At first, it was just a strange event, but sooner rather than later the world collapsed by it.
 "The void", this substance that nobody can explain what it is.
 Some people surrender to it, worship it, and even kill for it. Others tries to fight it.
