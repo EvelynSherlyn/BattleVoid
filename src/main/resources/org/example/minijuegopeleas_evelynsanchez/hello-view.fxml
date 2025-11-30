@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #04000d; -fx-border-color: #8b80a8;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.minijuegopeleas_evelynsanchez.HelloController">
+   <children>
+      <ToolBar fx:id="cabecera" prefHeight="37.0" prefWidth="424.0" style="-fx-background-color: #f0edf5;">
+        <items>
+            <Label text="BATTLEVOID" textFill="#161828">
+               <font>
+                  <Font name="Kristen ITC" size="15.0" />
+               </font>
+            </Label>
+            <Separator prefHeight="27.0" prefWidth="339.0" visible="false" />
+          <Button alignment="CENTER" mnemonicParsing="false" onAction="#clickSalir" style="-fx-background-color: #D8DAE9; -fx-border-color: #161828;" text="X" textAlignment="CENTER" textFill="#161828">
+               <font>
+                  <Font name="Kristen ITC" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+        </items>
+      </ToolBar>
+      <Pane prefHeight="464.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="464.0" fitWidth="500.0" layoutX="-1.0" layoutY="-1.0" opacity="0.04" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../fondos/circles.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="boton1" alignment="CENTER" blendMode="ADD" cache="true" layoutX="156.0" layoutY="217.0" mnemonicParsing="false" onAction="#clickPersonajes" prefHeight="46.0" prefWidth="186.0" style="-fx-background-color: #f0edf5; -fx-border-color: #161828; -fx-border-width: 4;" text="¡PELEAR!" textFill="#161828">
+               <font>
+                  <Font name="Kristen ITC" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+            <Button fx:id="boton2" alignment="CENTER" blendMode="ADD" cache="true" layoutX="156.0" layoutY="318.0" mnemonicParsing="false" onAction="#clickSalir" prefHeight="65.0" prefWidth="186.0" style="-fx-background-color: #f0edf5; -fx-border-width: 4; -fx-border-color: #161828;" text="SALIR" textFill="#161828">
+               <font>
+                  <Font name="Kristen ITC" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="131.0" fitWidth="340.0" layoutX="85.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@../../../titulo/BATTLEVOID_BLANCO_Evelyn.png" />
+               </image>
+               <effect>
+                  <Bloom threshold="0.99" />
+               </effect>
+            </ImageView>
+         </children></Pane>
+   </children>
+</VBox>
