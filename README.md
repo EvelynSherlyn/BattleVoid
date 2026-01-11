@@ -56,10 +56,3 @@ The first player whose their lifes reaches zero loses.
 ## 💟 || Versión
 - [X]   V1.0.1 - Base game + Readme
 - [ ]   ~~V1.0 - Base game~~
-
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
