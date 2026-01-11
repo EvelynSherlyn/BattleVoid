@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Titulo;
+    src: url("./Rubik_Iso/RubikIso-Regular.ttf");
+}
+
+@font-face {
+    font-family: Boton;
+    src: url("./New_Tegomin/NewTegomin-Regular.ttf");
+}
+
+@font-face {
+    font-family: Texto;
+    src: url("./Changa_One/ChangaOne-Regular.ttf");
+}

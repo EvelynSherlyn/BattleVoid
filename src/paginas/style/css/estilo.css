@@ -1,0 +1,456 @@
+/* UNIVERSAL */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {  
+    background-color:  #04000d; /* rgb(8, 0, 16) */
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.fondo {
+    height: 100%;
+    position: relative
+}
+
+.fondo::before {
+    content: "";
+    background-image: url("../../assets/fondos/Textura.png");
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* GENERAL */
+p {
+    color: #04000d;
+    font-size: 2rem;
+    font-family: 'Texto';
+}
+
+button {
+    border: solid 0.2rem #04000d;
+    padding: 0.6rem;
+    background-color:  #f0edf5;
+    color: #04000d;
+    font-size: 2rem;
+    font-family: "Boton";
+    cursor: pointer;
+}
+button:hover {
+    background-color: #bfb2da;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* CLASES - PRINCIPALES */
+.padre {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.marco {
+    border: 0.1rem solid  #f0edf5;
+    width: 91%;
+    height: 91%;
+}
+
+.cabecera {
+    background-color:  #f0edf5;
+    width: 100%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+}
+
+
+.cabecera>p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color:#04000d;
+    margin: 0 1rem 0 1rem;
+}
+.cabecera>img {
+    margin-left: 1rem;
+}
+.cabecera>button {
+    font-size:1.1rem;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.cuerpo {
+    display: flex;
+    height: 94%;
+}
+
+/* CLASES */
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu>* {
+    width: 50%;
+    margin: 0.8rem;
+}
+.menu>img {
+    width: 40%;
+    margin-bottom: 5rem;
+}
+/*--*/
+.elegirPersonaje {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.informacion {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.informacion p {
+    color:white;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 8rem 0 8rem;
+}
+
+.minipersonajes {
+    width: 100%;
+    height: 57%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 0.3rem white;
+}
+.minipersonajes img{
+    margin: 0 8rem 0 8rem;
+    height: 100%;
+    cursor:pointer;
+}
+
+.selector {
+    width: 100%;
+    height: 15%;
+    background-color:  #f0edf5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0 0.5rem 0;
+}
+.selector>img {
+    height: 85%;
+    margin: 0 0.7rem 0 0.7rem;
+    cursor: pointer;
+}
+
+.elegirPersonaje>button {
+    width: 15%;
+    padding: 0.1rem;
+    margin: auto;
+    margin-bottom: 0.3rem;
+}
+/*--*/
+.estadio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.variables {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.variables div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    min-width: 20%;
+    justify-content: center;
+}
+.variables p {
+    text-align: center;
+    color: white;
+}
+.variables img {
+    height: 100%;
+}
+
+.vidas {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content:space-around;
+}
+.vidas div{
+    width:30%;
+    display: flex;
+}
+.vidas img{
+    margin: auto;
+    height: 100%;
+}
+
+.sprites {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 0.3rem white;
+}
+.sprites * {
+    height: 100%;    
+}
+
+
+.abajos {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.abajos div {
+    display: flex;
+    flex-direction: column;
+  
+}
+.stats p{
+    font-size: 1.35rem;
+    color: #a091de9c;
+    margin: 0.4rem 0 0 0;
+}
+.abajos a {
+    color: white;
+    text-decoration: underline;
+    font-family: "Texto";
+    font-size: 1.5rem;
+    margin: auto;
+    cursor: pointer;
+}
+a:hover {
+    color: rgb(97, 52, 115);
+    text-shadow: 0 0 0;
+}
+
+.resultadoVencedor {
+    position: absolute;
+    z-index: 999999999;
+    height: 94%;
+    width: 100%;
+    background-color: #ffffff00;
+    pointer-events: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resultadoVencedor p {
+    color: #a091de9c;
+    font-size: 3rem;
+    text-shadow: 0 0 0.3rem rgba(255, 255, 255, 0.15), 0 0 0.3rem rgba(255, 255, 255, 0.15), 
+    0 0 0.3rem rgba(255, 255, 255, 0.15), 0 0 0.3rem rgba(255, 255, 255, 0.15), 0 0 0.3rem rgba(255, 255, 255, 0.15);
+}
+/* CLASES EFECTO */
+.glow {
+    text-shadow: 0 0 0.3rem rgba(255, 255, 255, 0.15), 0 0 0.3rem rgba(255, 255, 255, 0.15), 
+    0 0 0.3rem rgba(255, 255, 255, 0.15), 0 0 0.3rem rgba(255, 255, 255, 0.15), 0 0 0.3rem rgba(255, 255, 255, 0.15);
+}
+
+.disabled {
+    cursor:default;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.352) !important;
+}
+
+.noMuevas {
+    width: 80px;
+}
+
+.gris {
+    filter: grayscale(100%);
+}
+
+.sacudir {
+    animation: sacudete 0.5s;
+    position: relative;
+}
+
+@keyframes sacudete {
+    0%   {left: 0px; right: 0px;}
+    25%  {left: 10px; right: 0px;}
+    50%  {left: 0px; right: 10px;}
+    75%  {left: 5px; right: 0px;}
+    100% {left: 0px; right: 5px;}
+}
+
+/* ADAPTABLE */
+@media (max-width: 900px) {
+    .marco {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    .menu>img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu>img {
+        width:90%;
+    }
+    .menu button {
+        width: 80%;
+    }
+
+    .informacion {
+        height: auto;
+        align-items: center;
+        gap: 0.5rem;
+        min-height: 60px;
+    }
+    .informacion p {
+        margin: 0;
+        font-size: 1rem;
+    }
+    .minipersonajes {
+        height: auto;
+        align-items: center;
+        gap: 1rem;
+    }
+    .minipersonajes img {
+        height:120px;
+        margin: 0;
+    }
+    .elegirPersonaje>button {
+        width: 50%;
+    }
+    #nombre {
+        font-size: 1rem !important;
+    }
+
+    .estadio {
+        height: auto;
+    }
+    .variables {
+        height: auto;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .variables div {
+        min-width: auto;
+        height: auto;
+    }
+    .variables img {
+        height: 40px;
+    }
+    .variables p {
+        font-size: 1rem;
+    }
+    .vidas {
+        height: auto;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .vidas div {
+        width: 80%;
+        justify-content: center;
+    }
+    .vidas img {
+        height: 40px;
+    }
+    .sprites {
+        height: auto;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+    .sprites * {
+        height: 180px;
+    }
+    .abajos {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        gap: 1rem;
+    }
+    .abajos div {
+        align-items: center;
+    }
+    .stats p {
+        font-size: 1.1rem;
+    }
+    .abajos a {
+        font-size: 1.3rem;
+    }
+    .resultadoVencedor {
+        flex-direction: column;
+        justify-content:flex-end;
+    }
+    .resultadoVencedor p{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/** -------------------------------------------------------------------------------------------------- **/
+
+/* ID */
+#salir {
+    margin: auto;
+    margin-right: 1rem;
+}
+#titulo {
+    font-family: "Titulo";
+}
+#eye {
+    opacity: 0.03;
+    width: 45%;
+}
+#nombre {
+    font-size: 3rem;
+}
+.segundo {
+    transform: scaleX(-1);
+}
+#statFinal {
+    text-transform: capitalize;
+}
+
+
+/*
+Links:
+
+-Fondo imagen: https://coder-coder.com/background-image-opacity/
+- https://www.w3schools.com/howto/howto_css_flip_image.asp
+-Evitar seleccion de texto: https://developer.mozilla.org/es/docs/Web/CSS/Reference/Properties/user-select
+-Imagenes no arrastables: https://stackoverflow.com/questions/12906789/preventing-an-image-from-being-draggable-or-selectable-without-using-js
+-animacion: https://www.w3schools.com/cssref/tryit.php?filename=trycss3_animation-direction
+
+*/
