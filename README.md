@@ -1,67 +1,62 @@
-# Getting Started with Create React App
+<p align="center">
+<img width="300" height="120" alt="Titulo BattleVoid" src="https://github.com/user-attachments/assets/68e59a9f-2663-4edc-952d-4b2361834fc3" />
+</p>
+<br>
+<p align="center">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What is BattleVoid?
+```bash
+BattleVoid is an alternate universe where suddenly, something white and abnormal appears on the earth.
+At first, it was just a strange event, but sooner rather than later the world collapsed by it.
+"The void", this substance that nobody can explain what it is.
+Some people surrender to it, worship it, and even kill for it. Others tries to fight it.
 
-## Available Scripts
+"The void" will be the new evolution for humanity? Or just an abnormality that needs to be killed?
 
-In the project directory, you can run:
+This game is just a short game of some characters simulating their fights in this universe.
+```
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/acaabd99-6473-4c48-b191-06eed74ee961"/>
+</p>
 
-### `npm start`
+## 📚 || Personajes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| Kuka  | Dione | Paco | ? |
+| ------------- | ------------- | ------------- | ------------- |
+| <img width="300" height="300" alt="KukaChiquita" src="https://github.com/user-attachments/assets/398710c3-7ca2-41c8-865c-fce9897f9ebf" />  | <img width="300" height="300" alt="DioneChiquita" src="https://github.com/user-attachments/assets/849c2a5f-6c58-48c6-b020-5e46d34092a3" />  | <img width="300" height="300" alt="PacoChiquito" src="https://github.com/user-attachments/assets/bd652390-de79-4346-b0cb-ccce5b77e55b" />  | ?  |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+...and more!
 
-### `npm test`
+## ⌨️ || Gameplay
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The gameplay is simple, it's just a point and click to see which player has more luck.
 
-### `npm run build`
+Every character as their own stats; when the battle begins, a number is generated randomly and it adds up to the stat selected in that round.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The first player whose their lifes reaches zero loses.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2262323f-53a1-4085-a842-416329318b3d"/>
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💡 || Credits and tools
+- [Evelyn S.](https://github.com/EvelynSherlyn): Art, code and sounds.
+- [ChipTone](https://sfbgames.itch.io/chiptone): A tool to make the sounds for the game.
+- React
+- Krita: Drawing software.
 
-### `npm run eject`
+## 🗺️ || Roadmap
+```markdown
+- [X] Make the same game with React (+characthers +sounds ?music).
+- [ ] Add a new characther.
+- [ ] Add music.
+- [ ] Make a better version for phones.
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 💟 || Versión
+- [X]   V1.0.1 - Base game + Readme
+- [ ]   ~~V1.0 - Base game~~
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
