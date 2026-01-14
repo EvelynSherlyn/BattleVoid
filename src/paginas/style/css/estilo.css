@@ -443,6 +443,11 @@ a:hover {
     text-transform: capitalize;
 }
 
+#voltear {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 
 /*
 Links:

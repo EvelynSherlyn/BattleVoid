@@ -7,6 +7,11 @@ import corazon from "../assets/elementos/corazonIcono.png"
 import golpeSonido from "../assets/audios/golpe.wav"
 import perderSondio from "../assets/audios/perder.wav"
 
+import Stats from '../components/Stats';
+import Header from '../components/Header';
+import DisplayedNumGenerated from '../components/DisplayedNumGenerated';
+import Sprites from '../components/Sprites';
+
 function Combate() {
   const nav = useNavigate();
   const params = useParams();
@@ -39,11 +44,7 @@ function Combate() {
     <div className={'padre'}>
         <div className={'marco fondo'}>
 
-          <div className={'cabecera'}>
-            <img src={require("../assets/elementos/corazonIcono.png")} alt="icono" width="30"/>
-            <p id={'titulo'}>BattleVoid</p>
-            <button id={'salir'} onClick={() => nav(-1)}>X</button>
-          </div>
+          <Header direccion={-1}/>
 
           {/*--------------------*/}
 
@@ -54,17 +55,14 @@ function Combate() {
               </div>
 
               <div className={'variables'}>
-                <div>
-                  <img src={orbeIcono} alt="Void" />
-                  <p className={"noMuevas"}>{poderAcumulado === 0 ? "??":poderAcumulado}</p>
-                </div>
+                <DisplayedNumGenerated icon={orbeIcono} power={poderAcumulado} ide={""}/>
+
                 <div  className={'glow'}>
                   <p id={"statFinal"}>{seleccion}</p>
                 </div>
-                <div>
-                  <p className={"noMuevas"}>{poderAcumulado2 === 0 ? "??":poderAcumulado2}</p>
-                  <img src={orbeIcono} alt="Void" />
-                </div>
+                
+                <DisplayedNumGenerated icon={orbeIcono} power={poderAcumulado2} ide={"voltear"}/>
+                
               </div>
 
               <div className={'vidas'}>
@@ -73,16 +71,12 @@ function Combate() {
               </div>
 
               <div className={'sprites'}>
-                <div><img src={jugador1.img2 } alt="Personaje 1" id={"primerJugador"}/></div>
-                <div><img src={jugador2.img2 } alt="Personaje 2"  id={'segundoJugador'} className={"segundo"}/></div>
+                <Sprites jugador={jugador1} ide={"primerJugador"} clase={""} />
+                <Sprites jugador={jugador2} ide={"segundoJugador"} clase={"segundo"} />
               </div>
 
               <div className={'abajos'}>
-                <div className={'stats'}>
-                  <p>FUERZA:   {jugador1.fuerza}</p>
-                  <p>DESTREZA:   {jugador1.destreza}</p>
-                  <p>PODER:   {jugador1.poder}</p>
-                </div>
+                <Stats jugador={jugador1}/>
 
                 <div className={'glow'}>
                   <a onClick={() => seleccionAtributo()} className={acumular ? "disabled":""}>ACUMULAR PODER</a>
@@ -90,11 +84,8 @@ function Combate() {
                   <a onClick={() => nav(-1)}>REGRESAR AL VOID</a>
                 </div>
 
-                <div  className={'stats'}>
-                  <p>FUERZA:   {jugador2.fuerza}</p>
-                  <p>DESTREZA:   {jugador2.destreza}</p>
-                  <p>PODER:   {jugador2.poder}</p>
-                </div>
+                <Stats jugador={jugador2}/>
+
               </div>
             </div>
           </div>

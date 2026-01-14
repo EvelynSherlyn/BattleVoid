@@ -3,6 +3,9 @@ import '../style/import.css';
 import { useNavigate } from 'react-router-dom'
 import { personajes } from "../characters/personajes"
 
+import InfoCharacter from '../components/InfoCharacter';
+import Header from '../components/Header';
+import ProfileIcon from '../components/ProfileIcon';
 
 
 function Selector() {
@@ -20,26 +23,16 @@ function Selector() {
   return (
     <div className={'padre'}>
         <div className={'marco fondo'}>
-
-          <div className={'cabecera'}>
-            <img src={require("../assets/elementos/corazonIcono.png")} alt="icono" width="30"/>
-            <p id={'titulo'}>BattleVoid</p>
-            <button id={'salir'} onClick={() => nav(-1)}>X</button>
-          </div>
+          
+          <Header direccion={-1}/>
 
           {/*--------------------*/}
 
           <div className={'cuerpo'}>
             <div className={'elegirPersonaje'}>
                 <div className={'informacion'}>
-                    <div>
-                        <p id={'nombre'}>{personaje1.nombre}</p>
-                        <p>{personaje1.info}</p>
-                    </div>
-                    <div>
-                        <p id={'nombre'}>{personaje2.nombre}</p>
-                        <p>{personaje2.info}</p>
-                    </div>
+                    <InfoCharacter jugador={personaje1}/>
+                    <InfoCharacter jugador={personaje2}/>
                 </div>
 
                 <div className={'minipersonajes'}>
@@ -52,9 +45,9 @@ function Selector() {
                 </div>
 
                 <div className={'selector'}>
-                    <img src={require("../assets/sprites/iconos/KukaIcono.png")} onClick={() => cambiar(1)}/>
-                    <img src={require("../assets/sprites/iconos/PacoIcono.png")} onClick={() => cambiar(2)} />
-                    <img src={require("../assets/sprites/iconos/DioneIcono.png")} onClick={() => cambiar(3)} />
+                  <ProfileIcon icon={"KukaIcono"} num={1} cambiar={cambiar}/>
+                  <ProfileIcon icon={"PacoIcono"} num={2} cambiar={cambiar}/>
+                  <ProfileIcon icon={"DioneIcono"} num={3} cambiar={cambiar}/>
                 </div>
                 
                 <button type="button" onClick={() => jugador1 && jugador2 ? nav(`/combate/${index}/${index2}`) : null}>Listo</button>

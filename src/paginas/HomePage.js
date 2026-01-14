@@ -2,17 +2,15 @@ import React from 'react'
 import './style/import.css';
 import { useNavigate } from 'react-router-dom'
 
+import Header from './components/Header';
+
 function HomePage() {
   const nav = useNavigate();
   return (
     <div className={'padre'}>
         <div className={'marco fondo'}>
 
-          <div className={'cabecera'}>
-            <img src={require("./assets/elementos/corazonIcono.png")} alt="icono" width="30"/>
-            <p id={'titulo'}>BattleVoid</p>
-            <button id={'salir'} onClick={() => nav("/void")}>X</button>
-          </div>
+          <Header direccion={"/void"}/>
 
           {/*--------------------*/}
 
